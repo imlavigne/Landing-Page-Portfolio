@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.nav{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    
+}
+.logo{
+    color: aqua;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    margin: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: blue;
+}
