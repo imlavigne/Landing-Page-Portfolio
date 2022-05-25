@@ -16,6 +16,18 @@
     /* border: red solid; */
     
 }
+.menu-toggle {
+    display: none;
+ }
+.menu-toggle:checked ~ .toggle {
+    display: block;
+  }
+  
+.menu-toggle:checked ~ .toggle {
+    display: block;
+  }
+
+  
 .logo{
     color: aqua;
     margin: 10px;
@@ -141,4 +153,25 @@ body{
 .info h2{
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; ;
     text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+    
+    .toggle{
+        display: none;
+    }
+    .menu-toggle {
+        display: contents;
+        
+        
+     }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+    } 
+    .menu-toggle i{
+        margin: 0rem 2rem;
+    }
 }
