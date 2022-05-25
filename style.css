@@ -6,7 +6,7 @@
     
 }
 .nav{
-    background-color: tomato;
+    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -45,10 +45,7 @@ body{
     
     /* border: solid red; */
 }
-.div-principal{
-    width: 95%;
-    
-}
+
  .landing-cotainer{
     
     display: flex;
@@ -57,7 +54,7 @@ body{
     justify-content: center;
     
     /* border: solid red; */
-    margin: 2rem;
+    margin: 1rem;
     background-color: white;
     box-shadow: 2px 5px 5px red;
     border-radius: 5px;
@@ -85,8 +82,9 @@ body{
     /* width: 200px;
     height: 50px; */
     /* border: red solid; */
-    gap: 1%;
+    gap: 0.5%;
     /* border:solid red; */
+    
     
 }
 .btn-1{
@@ -97,7 +95,8 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
-    padding: 2% 5%;
+    padding: 5px;
+    text-align: center;
     
     
   
@@ -107,12 +106,13 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
-    padding: 2% 5%;
+    padding: 5px;
     border-radius: 20px;
     color: black;
     /* text-transform: uppercase; */
     border: solid black;
     box-shadow: 2px 2px 2px;
+    text-align: center;
     
 }
 .slogan{
@@ -132,7 +132,7 @@ body{
     gap: 2rem;
     padding: 2rem;
     /* border: solid red; */
-    margin: 2rem;
+    margin: 1rem;
     background-color: white;
     box-shadow: 2px 5px 5px red;
     border-radius: 5px;
