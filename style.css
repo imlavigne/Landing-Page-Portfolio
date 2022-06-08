@@ -5,6 +5,15 @@
     box-sizing: border-box;
     
 }
+:root{
+    --medium: 700;
+  --regular: 400;
+  --thin: 300;
+}
+body{
+    width: 1000vw;
+    max-width: 100%;
+}
 .nav{
     background-color: red;
     display: flex;
@@ -48,15 +57,7 @@ ul{
 a{
     text-decoration: none;
 }
-body{
-    width: 100vw;
-    background-color: blue;
-    max-width: 100%;
-    /* font-family: "Poppins", sans-serif; */
-    
-    
-    /* border: solid red; */
-}
+
 
  .landing-cotainer{
     
@@ -134,7 +135,7 @@ body{
     justify-content: center;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; ;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .info{
     
@@ -150,12 +151,118 @@ body{
     box-shadow: 2px 5px 5px red;
     border-radius: 5px;
 }
-.info h2{
+.tittle{
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; ;
     text-transform: uppercase;
 }
+.ejercicio3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 2px 5px 5px red;
+    border-radius: 5px;
+    gap:1rem;
+}
+.ejer3{
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.ejercicio3 p{
+    max-width: 70%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--regular);
+}
+.conteiner-ficha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: salmon; */
+    gap: 2rem;
+}
 
-@media (max-width: 400px) {
+.ficha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    gap: 1rem;
+    padding: 1rem 0 2rem;
+}
+.ficha h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.ficha p{
+    text-align: center;
+}
+.section-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 2px 5px 5px red;
+    border-radius: 5px;
+    gap:1rem;
+    max-width: 100%;
+}
+.section3 img{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.section-3 h2{
+    text-transform: uppercase;
+}
+.section3 h2{
+    text-transform: uppercase;
+    /* background-color: blue; */
+    
+}
+.section3{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 auto; */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  
+    }
+.section3 p{
+    font-family:"Poppins", sans-serif;
+    font-size: var(--medium);
+    max-width: 50%;
+    
+}
+.conteiner-section3{
+    /* max-width: 90%; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+
+}
+@media (max-width: 1000px) {
     
     .toggle{
         display: none;
@@ -179,3 +286,44 @@ body{
         display: none;
     }
 }
+@media (min-width:1000px) {
+    .conteiner-ficha{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* background-color: salmon; */
+        gap: 2rem;
+        }
+    .conteiner-section3{
+        flex-direction: row;
+        width: 100%;
+        justify-content: baseline;
+        /* margin-right: 2rem; */
+        justify-content: space-between;
+        /* background-color: aqua; */
+    }
+    .items-link{
+        position: relative;
+    }
+    .nav .items-link::after{
+        content: "";
+        height: 3px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.15s ease;
+      }
+    
+       .nav .items-link:hover::after{
+         transform-origin: bottom left;
+         transform: scaleX(1);
+       } 
+    
+   
+
+    }
